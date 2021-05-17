@@ -23,7 +23,11 @@ class _MuSSpeedAppState extends State<MuSSpeedApp> {
           gradient: LinearGradient(
               begin: Alignment.topLeft,
               end: Alignment.bottomRight,
-              colors: [Colors.blue[800], Colors.blue[200]]),
+              colors: [
+                Colors.grey[900],
+                Colors.deepPurple[900],
+                Colors.grey[700]
+              ]),
         ),
         child: Padding(
             padding: EdgeInsets.symmetric(vertical: 48, horizontal: 12),
@@ -46,7 +50,7 @@ class _MuSSpeedAppState extends State<MuSSpeedApp> {
                     width: 300,
                     height: 300,
                     decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(30.0),
+                      borderRadius: BorderRadius.circular(20.0),
                       image: DecorationImage(
                         image: AssetImage("assets/arrow_ragnbone_man.jpg"),
                       ),
@@ -58,4 +62,9 @@ class _MuSSpeedAppState extends State<MuSSpeedApp> {
       ),
     );
   }
+}
+
+class MusicFile {
+  String fileName;
+  Image fileCover;
 }
